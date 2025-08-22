@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Google Sans Code", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 150px 150px 150px 150px 150px 150px;
+}   
+
+.footer {
+    font-size: 10px;
+    color: darkslategrey;
+
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: #e0e0e0; 
+}
+
+.important {
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff2600, #ff5100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    color: transparent;
+
+}
+
+.report-button {
+    font-size: 45px;
+    font-family: "Google Sans Code", sans-serif;
+
+    font-weight: bold;
+    text-align: center;
+    
+    align-self: center;
+
+    justify-self: center;
+    background-color: linear-gradient(90deg, #ff2600, #ff5100);
+
+    grid-column: 4/8;
+    grid-row: 4/4;
+
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: #3b0000;
+}   
+
+.header {
+    font-weight: bold;
+    font-size: 42px;
+    font-family: "Google Sans Code", sans-serif;
+
+    align-self: center;
+    justify-self: center;
+
+    grid-column: 3/9;
+    grid-row: 2/2;
+
+    background-color: #e0e0e0; /* Light grey */
+    border-radius: 10px;
+    padding: 20px;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: linear-gradient(90deg, #ff2600, #ff5100); /* Dark red */
+}
+
+.info-header {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Google Sans Code", sans-serif;
+
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+
+    grid-column: 1/span 11;
+    grid-row: 3/4;
+
+    background-color: #e0e0e0; /* Light grey */
+    border-radius: 10px;
+    padding: 10px;
+
+    grid-column: 5/7;
+    grid-row: 5/5;
+}
+
+.sidebar {
+    background-color: #e0e0e0; /* Light grey */
+    border-radius: 10px;
+
+    grid-column: 1/span 11;
+    grid-row: 1/1;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.sidebar-item {
+    font-size: 17px;
+    font-family: "Google Sans Code", sans-serif;
+
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
